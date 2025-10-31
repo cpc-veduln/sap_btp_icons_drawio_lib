@@ -1,0 +1,371 @@
+<HTML><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>MTToReport_MT094</TITLE>
+    <LINK href="..\..\..\..\/css/defaultMappingStyleSheet.css"
+        type="text/css" rel="stylesheet">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <H3>Translator  Mapping Definition: MTToReport_MT094</H3>
+    <TABLE class="MappingDefHeadingTable">
+        <TD  colspan="2"></TD ><TD>&nbsp;</TD><TR class="smallerMappingHeader">
+            <TD>Name</TD><TD>&nbsp;:</TD><TD>MTToReport_MT094</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Type</TD><TD>&nbsp;:</TD><TD>Mapping Definition</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Group</TD><TD>&nbsp;:</TD><TD>Map:MTReports</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Project</TD><TD>&nbsp;:</TD><TD>C:\No_Backup\Projects\schemintegration\transformations\schmsade\src\main\resources\SCHEM_Transformations.tpj</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Part of Library</TD><TD>&nbsp;:</TD><TD>N</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Date Printed</TD><TD>&nbsp;:</TD><TD>Wed Mar 20 15:02:12
+                CET 2024</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>User</TD><TD>&nbsp;:</TD><TD>tvanassc</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Publishing Description</TD><TD>&nbsp;:</TD><TD></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Input Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">s:MT094</TD><TD
+                class="tddescbgcolor">Msg:MT094</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Output Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">Output</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Temporary Variable Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">outputText</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">true</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">ReportComplete</TD><TD
+                class="tddescbgcolor">Bot:Boolean</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">Aggregated</TD><TD
+                class="tddescbgcolor">Bot:Boolean</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">Mapping
+        Actions</SPAN><BR></BR><TABLE width="100%" class="actionTableHeading">
+        <TR>
+            <TD width="13%">Action</TD><TD width="88%">Details</TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                CopyFromHeaders</TD><TD width="88%">Input to TEMP~ReportComplete<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                CopyFromHeaders</TD><TD width="88%">Input to TEMP~Aggregated<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN
+                    class>(NOT(TEMP~ReportComplete) AND TEMP~Aggregated)</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;\r\n************************************************************************\r\n&quot;
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;********
+                                    Incomplete statement - not all
+                                    sequences received.
+                                    ********&quot; to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;\r\n************************************************************************\r\n&quot;
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%"></TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_copy_simple.ico">
+                Copy</TD><TD width="88%">&quot;\r\nBasic Header:
+                &quot; to TEMP~outputText[.NEW]<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Format</TD><TD width="88%">Blocks123/Block1,false to TEMP~outputText[.NEW]<BR>
+                <span>DefaultValue: false</span>
+                <BR>
+                <span>FixedValue: false</span>
+                <BR>
+                <span>DefaultValue: false</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_copy_simple.ico">
+                Copy</TD><TD width="88%">&quot;\r\nApplication Header:
+                &quot; to TEMP~outputText[.NEW]<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Format</TD><TD
+                width="88%">Blocks123/Block2/Block2_Output,false to TEMP~outputText[.NEW]<BR>
+                <span>DefaultValue: false</span>
+                <BR>
+                <span>FixedValue: false</span>
+                <BR>
+                <span>DefaultValue: false</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN class>Blocks123/Block3 IsPresent</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;\r\nUser
+                                    Header:        &quot; to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Format</TD><TD
+                                    width="88%">Blocks123/Block3,false
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span>DefaultValue: false</span>
+                                    <BR>
+                                    <span>FixedValue: false</span>
+                                    <BR>
+                                    <span>DefaultValue: false</span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%"></TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN class>Block5 IsPresent</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;\r\nTrailer:
+                                    &quot; to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Format</TD><TD
+                                    width="88%">Block5,false to TEMP~outputText[.NEW]<BR>
+                                    <span>DefaultValue: false</span>
+                                    <BR>
+                                    <span>FixedValue: false</span>
+                                    <BR>
+                                    <span>DefaultValue: false</span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%"></TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_copy_simple.ico">
+                Copy</TD><TD width="88%">&quot;\r\n\r\nMessage Text
+                (Block 4)\r\n----------------------\r\n\r\n&quot; to TEMP~outputText[.NEW]<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Format</TD><TD width="88%">Block4,false to TEMP~outputText[.NEW]<BR>
+                <span>DefaultValue: false</span>
+                <BR>
+                <span>FixedValue: false</span>
+                <BR>
+                <span>DefaultValue: false</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                TrimLeft</TD><TD width="88%">TEMP~outputText[.LAST] to TEMP~outputText[.LAST]<BR>
+                <span>toTrim: &quot;{4:\r\n&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                TrimRight</TD><TD width="88%">TEMP~outputText[.LAST] to TEMP~outputText[.LAST]<BR>
+                <span>toTrim: &quot;-}&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_copy_simple.ico">
+                Copy</TD><TD width="88%">&quot;\r\n------- End Of
+                Message -------\r\n&quot; to TEMP~outputText[.NEW]<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Join</TD><TD width="88%">TEMP~outputText[] to Output</TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">End Of Mapping</SPAN></BODY>
+</HTML>

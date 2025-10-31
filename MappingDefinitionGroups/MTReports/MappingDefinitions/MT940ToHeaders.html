@@ -1,0 +1,1224 @@
+<HTML><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>MT940ToHeaders</TITLE>
+    <LINK href="..\..\..\..\/css/defaultMappingStyleSheet.css"
+        type="text/css" rel="stylesheet">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <H3>Translator  Mapping Definition: MT940ToHeaders</H3>
+    <TABLE class="MappingDefHeadingTable">
+        <TD  colspan="2"></TD ><TD>&nbsp;</TD><TR class="smallerMappingHeader">
+            <TD>Name</TD><TD>&nbsp;:</TD><TD>MT940ToHeaders</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Type</TD><TD>&nbsp;:</TD><TD>Mapping Definition</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Group</TD><TD>&nbsp;:</TD><TD>Map:MTReports</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Project</TD><TD>&nbsp;:</TD><TD>C:\No_Backup\Projects\schemintegration\transformations\schmsade\src\main\resources\SCHEM_Transformations.tpj</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Part of Library</TD><TD>&nbsp;:</TD><TD>N</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Date Printed</TD><TD>&nbsp;:</TD><TD>Wed Mar 20 15:02:11
+                CET 2024</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>User</TD><TD>&nbsp;:</TD><TD>tvanassc</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Publishing Description</TD><TD>&nbsp;:</TD><TD></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Input Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">MT940</TD><TD
+                class="tddescbgcolor">Msg:MT940</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Output Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">Output</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Temporary Variable Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">outputText</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">true</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">ReportComplete</TD><TD
+                class="tddescbgcolor">Bot:Boolean</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">senderBIC</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">senderBranch</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tmpValue</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">transactionCsvLine</TD><TD
+                class="tddescbgcolor">Component:TransactionCSVLine</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tmpIndex</TD><TD
+                class="tddescbgcolor">Bot:Integer</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">Mapping
+        Actions</SPAN><BR></BR><TABLE width="100%" class="actionTableHeading">
+        <TR>
+            <TD width="13%">Action</TD><TD width="88%">Details</TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Mark incomplete report</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico">
+                CopyFromHeaders</TD><TD width="88%"
+                class="actionIsDisabled">Input to TEMP~ReportComplete<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN class="actionIsDisabled">NOT(TEMP~ReportComplete)</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Incomplete
+                                    statement - not all pages
+                                    received!!!&quot; to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%"></TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">--- Header ---</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Sender BIC</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico">
+                CopySubstring</TD><TD width="88%"
+                class="actionIsDisabled">s:Blocks123/Block2/Block2_Output/MIR
+                to TEMP~senderBIC<BR>
+                <span>Start: &quot;7&quot;</span>
+                <BR>
+                <span>Length: &quot;8&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico">
+                CopySubstring</TD><TD width="88%"
+                class="actionIsDisabled">s:Blocks123/Block2/Block2_Output/MIR
+                to TEMP~senderBranch<BR>
+                <span>Start: &quot;16&quot;</span>
+                <BR>
+                <span>Length: &quot;3&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico">
+                Concatenate</TD><TD width="88%"
+                class="actionIsDisabled">&quot;Sender
+                BIC;&quot;,TEMP~senderBIC,TEMP~senderBranch to TEMP~outputText[.NEW]<BR>
+                <span>Input1: &quot;Sender BIC;&quot;</span>
+                <BR>
+                <span>Input2: TEMP ~senderBIC</span>
+                <BR>
+                <span>Input3: TEMP ~senderBranch</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN class="textComments">AccountId</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico">
+                Concatenate</TD><TD width="88%"
+                class="actionIsDisabled">&quot;Account
+                Identification;&quot;,Block4/AccountId to TEMP~outputText[.NEW]<BR>
+                <span>Input1: &quot;Account Identification;&quot;</span>
+                <BR>
+                <span>Input2: Block4/AccountId</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN class="textComments">StatementNumber</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico"> PadField</TD><TD
+                width="88%"
+                class="actionIsDisabled">Block4/StatementNumSeqNum/StatementNumber,5,Right,0
+                to TEMP~tmpValue<BR>
+                <span>Width: 5</span>
+                <BR>
+                <span>Justification: Right</span>
+                <BR>
+                <span>FillChar: 0</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico">
+                Concatenate</TD><TD width="88%"
+                class="actionIsDisabled">&quot;Statement
+                Number;&quot;,TEMP~tmpValue to TEMP~outputText[.NEW]<BR>
+                <span>Input1: &quot;Statement Number;&quot;</span>
+                <BR>
+                <span>Input2: TEMP ~tmpValue</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN class="textComments">SequenceNumber</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                RemoveNode</TD><TD width="88%">TEMP~tmpValue<BR>
+                <span>Target: TEMP ~tmpValue</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico"> PadField</TD><TD
+                width="88%"
+                class="actionIsDisabled">Block4/StatementNumSeqNum/SequenceNumber,5,Right,0
+                to TEMP~tmpValue<BR>
+                <span>Width: 5</span>
+                <BR>
+                <span>Justification: Right</span>
+                <BR>
+                <span>FillChar: 0</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/scroll.ico">
+                Concatenate</TD><TD width="88%"
+                class="actionIsDisabled">&quot;Sequence
+                Number;&quot;,Block4/StatementNumSeqNum/SequenceNumber
+                to TEMP~outputText[.NEW]<BR>
+                <span>Input1: &quot;Sequence Number;&quot;</span>
+                <BR>
+                <span>Input2: Block4/StatementNumSeqNum/SequenceNumber</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Date, Currency and Opening Balance</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN
+                    class="actionIsDisabled">Block4/OpeningBalance/FinalBalance IsPresent</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DateToText</TD><TD width="88%"
+                                    class="actionIsDisabled">Block4/OpeningBalance/FinalBalance/DatedCurrencyAmount/Date,dd/MM/yyyy
+                                    to TEMP~tmpValue<BR>
+                                    <span>Format: dd/MM/yyyy</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Concatenate</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Date;&quot;,TEMP~tmpValue
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span>Input1: &quot;Date;&quot;</span>
+                                    <BR>
+                                    <span>Input2: TEMP ~tmpValue</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Concatenate</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Currency;&quot;,Block4/OpeningBalance/FinalBalance/DatedCurrencyAmount/CurrencyAmount/Currency
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span>Input1: &quot;Currency;&quot;</span>
+                                    <BR>
+                                    <span>Input2: Block4/OpeningBalance/FinalBalance/DatedCurrencyAmount/CurrencyAmount/Currency</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">Block4/OpeningBalance/FinalBalance/DatedCurrencyAmount/CurrencyAmount/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to TEMP~tmpValue<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Concatenate</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Opening
+                                    Amount;&quot;,TEMP~tmpValue,&quot;;&quot;
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span>Input1: &quot;Opening Amount;&quot;</span>
+                                    <BR>
+                                    <span>Input2: TEMP ~tmpValue</span>
+                                    <BR>
+                                    <span>Input3: &quot;;&quot;</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    NamedTableLookup</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">MT940CSV:DC,Block4/OpeningBalance/FinalBalance/DebitOrCreditMark
+                                    to TEMP~tmpValue<BR>
+                                    <span>Table: MT940CSV:DC</span>
+                                    <BR>
+                                    <span>DefaultValue: Set Output
+                                    To Null</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Append</TD><TD width="88%"
+                                    class="actionIsDisabled">TEMP~tmpValue
+                                    to TEMP~outputText[.LAST]</TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_else.ico">
+                            ELSE</TD><TD width="88%" colspan="2"><SPAN class="actionIsDisabled"></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Concatenate</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Date;&quot;,Block4/OpeningBalance/IntermediateBalance/DatedCurrencyAmount/Date
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span>Input1: &quot;Date;&quot;</span>
+                                    <BR>
+                                    <span>Input2: Block4/OpeningBalance/IntermediateBalance/DatedCurrencyAmount/Date</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Concatenate</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Currency;&quot;,Block4/OpeningBalance/IntermediateBalance/DatedCurrencyAmount/CurrencyAmount/Currency
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span>Input1: &quot;Currency;&quot;</span>
+                                    <BR>
+                                    <span>Input2: Block4/OpeningBalance/IntermediateBalance/DatedCurrencyAmount/CurrencyAmount/Currency</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Opening
+                                    Amount;;&quot; to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">--- Transactions ---</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/action_copy_simple.ico">
+                Copy</TD><TD width="88%"
+                class="actionIsDisabled">&quot;Transaction Type;Value
+                Date;Debit;Credit;Reference;Bank Reference;Additional
+                Information;Information to Account Owner&quot; to TEMP~outputText[.NEW]<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_repeat.ico">
+                Repeat</TD><TD width="88%" colspan="3">Repeat for:
+                Block4/ActivityDetails[], Limit: Block4/ActivityDetails[#]</TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            RemoveNode</TD><TD width="88%">TEMP~transactionCsvLine<BR>
+                            <span>Target: TEMP ~transactionCsvLine</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            CopySubstring</TD><TD
+                            width="88%">Block4/ActivityDetails[Counter1]/StatementLine1/TxnTypeIdCode
+                            to TEMP~transactionCsvLine/TransactionType<BR>
+                            <span>Start: &quot;1&quot;</span>
+                            <BR>
+                            <span>Length: &quot;1&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            DateToText</TD><TD
+                            width="88%">Block4/ActivityDetails[Counter1]/StatementLine1/Date,dd/MM/yyyy
+                            to TEMP~transactionCsvLine/ValueDate<BR>
+                            <span>Format: dd/MM/yyyy</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>(Block4/ActivityDetails[Counter1]/StatementLine1/DebitOrCreditMark
+                                = &quot;C&quot; OR
+                                Block4/ActivityDetails[Counter1]/StatementLine1/DebitOrCreditMark
+                                = &quot;RD&quot;)</SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%">Block4/ActivityDetails[Counter1]/StatementLine1/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to TEMP~transactionCsvLine/Credit<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%">Block4/ActivityDetails[Counter1]/StatementLine1/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to TEMP~transactionCsvLine/Debit<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">Block4/ActivityDetails[Counter1]/StatementLine1/RefForTheAcctOwner
+                            to TEMP~transactionCsvLine/Reference<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">Block4/ActivityDetails[Counter1]/StatementLine1/AcctServicingInstReference
+                            to TEMP~transactionCsvLine/BankReference<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">Block4/ActivityDetails[Counter1]/StatementLine1/SupplementaryDetails
+                            to TEMP~transactionCsvLine/AdditionalInformation<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            s:CopyFromMultiLineText</TD><TD
+                            width="88%">Block4/ActivityDetails[Counter1]/InfoToAcctOwner,Nothing
+                            to TEMP~transactionCsvLine/InformationToAccountOwner<BR>
+                            <span>FixedValue: //</span>
+                            <BR>
+                            <span>CombiningText: Nothing</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>TEMP~transactionCsvLine/InformationToAccountOwner
+                                Matches &quot;/REF/*&quot; WildCard
+                                Matching </SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>TEMP~transactionCsvLine/InformationToAccountOwner
+                                    Contains &quot;
+                                    &quot; </SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    FirstIndexOf</TD><TD
+                                    width="88%">TEMP~transactionCsvLine/InformationToAccountOwner,&quot;
+                                    &quot;
+                                    to TEMP~tmpIndex<BR>
+
+                                    <span>SearchFor:
+                                    &quot; &quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    CopySubstring</TD><TD
+                                    width="88%">TEMP~transactionCsvLine/AdditionalInformation
+                                    to TEMP~transactionCsvLine/InformationToAccountOwner3<BR>
+
+                                    <span>Start:
+                                    TEMP ~tmpIndex</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    SubtractFrom</TD><TD
+                                    width="88%">&quot;1&quot;
+                                    to TEMP~tmpIndex<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    CopySubstring</TD><TD
+                                    width="88%">TEMP~transactionCsvLine/InformationToAccountOwner
+                                    to TEMP~transactionCsvLine/InformationToAccountOwner2<BR>
+
+                                    <span>Start: &quot;1&quot;</span>
+                                    <BR>
+
+                                    <span>Length:
+                                    TEMP ~tmpIndex</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    CopySubstring</TD><TD
+                                    width="88%">TEMP~transactionCsvLine/InformationToAccountOwner
+                                    to TEMP~transactionCsvLine/InformationToAccountOwner2<BR>
+
+                                    <span>Start: &quot;6&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;/REF/&quot;
+                                    to TEMP~transactionCsvLine/InformationToAccountOwner<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%"></TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/NewOutputRepetition.ico">
+                            NewOutputRepetition</TD><TD width="88%"
+                            colspan="3">Output to: TEMP~outputText[]</TD></TR>
+                    <TR>
+                        <TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Format</TD><TD
+                                    width="88%">TEMP~transactionCsvLine,false
+                                    to TEMP~outputText[Out1]<BR>
+                                    <span>DefaultValue: false</span>
+                                    <BR>
+                                    <span>FixedValue: false</span>
+                                    <BR>
+                                    <span>DefaultValue: false</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Append</TD><TD
+                                    width="88%">&quot;\r\n&quot; to TEMP~outputText[Out1]</TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">--- Footer ---</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Closing Amount Booked</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN
+                    class="actionIsDisabled">Block4/ClosBal_BookedFunds/FinalBalance IsPresent</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">Block4/ClosBal_BookedFunds/FinalBalance/DatedCurrencyAmount/CurrencyAmount/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to TEMP~tmpValue<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Concatenate</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Closing
+                                    Amount (Booked
+                                    Funds);&quot;,TEMP~tmpValue,&quot;;&quot;
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span>Input1: &quot;Closing
+                                    Amount (Booked Funds);&quot;</span>
+                                    <BR>
+                                    <span>Input2: TEMP ~tmpValue</span>
+                                    <BR>
+                                    <span>Input3: &quot;;&quot;</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    NamedTableLookup</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">MT940CSV:DC,Block4/ClosBal_BookedFunds/FinalBalance/DebitOrCreditMark
+                                    to TEMP~tmpValue<BR>
+                                    <span>Table: MT940CSV:DC</span>
+                                    <BR>
+                                    <span>DefaultValue: Set Output
+                                    To Null</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Append</TD><TD width="88%"
+                                    class="actionIsDisabled">TEMP~tmpValue
+                                    to TEMP~outputText[.LAST]</TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_else.ico">
+                            ELSE</TD><TD width="88%" colspan="2"><SPAN class="actionIsDisabled"></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Closing
+                                    Amount (Booked Funds);;&quot; to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Closing Amount Available</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionNameIsDisabled"><IMG
+                    height="16px" width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN
+                    class="actionIsDisabled">Block4/ClosAvailBal_AvailFunds IsPresent</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">Block4/ClosAvailBal_AvailFunds/DatedCurrencyAmount/CurrencyAmount/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to TEMP~tmpValue<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Concatenate</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Closing
+                                    Amount (Available
+                                    Funds);&quot;,TEMP~tmpValue,&quot;;&quot;
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span>Input1: &quot;Closing
+                                    Amount (Available Funds);&quot;</span>
+                                    <BR>
+                                    <span>Input2: TEMP ~tmpValue</span>
+                                    <BR>
+                                    <span>Input3: &quot;;&quot;</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    NamedTableLookup</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">MT940CSV:DC,Block4/ClosAvailBal_AvailFunds/DebitOrCreditMark
+                                    to TEMP~tmpValue<BR>
+                                    <span>Table: MT940CSV:DC</span>
+                                    <BR>
+                                    <span>DefaultValue: Set Output
+                                    To Null</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Append</TD><TD width="88%"
+                                    class="actionIsDisabled">TEMP~tmpValue
+                                    to TEMP~outputText[.LAST]</TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_else.ico">
+                            ELSE</TD><TD width="88%" colspan="2"><SPAN class="actionIsDisabled"></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD width="88%"
+                                    class="actionIsDisabled">&quot;Closing
+                                    Amount (Available Funds);;&quot;
+                                    to TEMP~outputText[.NEW]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Format all lines to Output</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Join</TD><TD width="88%">TEMP~outputText[] to Output</TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">End Of Mapping</SPAN></BODY>
+</HTML>

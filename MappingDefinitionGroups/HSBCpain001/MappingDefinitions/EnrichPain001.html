@@ -1,0 +1,1923 @@
+<HTML><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>EnrichPain001</TITLE>
+    <LINK href="..\..\..\..\/css/defaultMappingStyleSheet.css"
+        type="text/css" rel="stylesheet">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <H3>Translator  Mapping Definition: EnrichPain001</H3>
+    <TABLE class="MappingDefHeadingTable">
+        <TD  colspan="2"></TD ><TD>&nbsp;</TD><TR class="smallerMappingHeader">
+            <TD>Name</TD><TD>&nbsp;:</TD><TD>EnrichPain001</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Type</TD><TD>&nbsp;:</TD><TD>Mapping Definition</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Group</TD><TD>&nbsp;:</TD><TD>Map:HSBCpain001</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Project</TD><TD>&nbsp;:</TD><TD>C:\No_Backup\Projects\schemintegration\transformations\schmsade\src\main\resources\SCHEM_Transformations.tpj</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Part of Library</TD><TD>&nbsp;:</TD><TD>N</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Date Printed</TD><TD>&nbsp;:</TD><TD>Wed Mar 20 15:02:09
+                CET 2024</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>User</TD><TD>&nbsp;:</TD><TD>tvanassc</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Publishing Description</TD><TD>&nbsp;:</TD><TD></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Input Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">painMultiple:Document</TD><TD
+                class="tddescbgcolor">Component:Document</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Output Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">Output</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Temporary Variable Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">AccountNumber</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD
+                class="tdtitlebgcolor">AccountNumberFromProperties</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">CurrencyType</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD
+                class="tdtitlebgcolor">OwnAccountsConfiguration_String</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">OwnAccountsConfiguration</TD><TD
+                class="tddescbgcolor">Component:OwnAccountsConfiguration</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tempString</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tempDateTimeString</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">PainBatch</TD><TD
+                class="tddescbgcolor">Component:Document</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">true</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">MessageInfo</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">true</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">HSBCMessageInfo</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">RemittanceAE</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">Mapping
+        Actions</SPAN><BR></BR><TABLE width="100%" class="actionTableHeading">
+        <TR>
+            <TD width="13%">Action</TD><TD width="88%">Details</TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_repeat.ico">
+                Repeat</TD><TD width="88%" colspan="3">Repeat for:
+                pain.001.001.02[], Output to: TEMP~PainBatch[], Limit: pain.001.001.02[#]</TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Format</TD><TD
+                            width="88%">pain.001.001.02[Counter1],false
+                            to TEMP~tempString<BR>
+                            <span>DefaultValue: false</span>
+                            <BR>
+                            <span>FixedValue: false</span>
+                            <BR>
+                            <span>DefaultValue: false</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Parse</TD><TD
+                            width="88%">TEMP~tempString,true,false to TEMP~PainBatch[Out1]/pain.001.001.02<BR>
+                            <span>DefaultValue: true</span>
+                            <BR>
+                            <span>DefaultValue: false</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN
+                                class="textComments">Populate Message Info</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">NULL to TEMP~tempString<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD
+                            width="88%">pain.001.001.02[Counter1]/GrpHdr/MsgId
+                            to TEMP~tempString<BR>
+                            <span>Separator: &quot;\t|&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD width="88%">&quot;\t|&quot;
+                            to TEMP~tempString</TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD
+                            width="88%">pain.001.001.02[Counter1]/GrpHdr/NbOfTxs
+                            to TEMP~tempString</TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD width="88%">&quot;\t|&quot;
+                            to TEMP~tempString</TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD
+                            width="88%">pain.001.001.02[Counter1]/GrpHdr/CtrlSum
+                            to TEMP~tempString</TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD width="88%">&quot;\t|&quot;
+                            to TEMP~tempString</TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD
+                            width="88%">pain.001.001.02[Counter1]/GrpHdr/InitgPty/Nm
+                            to TEMP~tempString</TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD width="88%">&quot;/&quot; to TEMP~tempString</TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            DateTimeToText</TD><TD
+                            width="88%">pain.001.001.02[Counter1]/GrpHdr/CreDtTm,yyyy-MM-dd
+                            HH:mm:ss,Local to TEMP~tempDateTimeString<BR>
+                            <span>Format: yyyy-MM-dd HH:mm:ss</span>
+                            <BR>
+                            <span>DefaultValue: Local</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Append</TD><TD
+                            width="88%">TEMP~tempDateTimeString to TEMP~tempString</TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">TEMP~tempString to TEMP~MessageInfo[.NEW]<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN
+                                class="textComments">Set Batch Booking
+                                to fales Line 36 of JCD</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">VALUE~false to TEMP~PainBatch[Out1]/pain.001.001.02/GrpHdr/BtchBookg<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN
+                                class="textComments">Replacement of
+                                Remittance Info for AE Payments</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_repeat.ico">
+                            Repeat</TD><TD width="88%"
+                            colspan="3">Repeat for:
+                            TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[],
+                            Limit: TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[#]</TD></TR>
+                    <TR>
+                        <TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_repeat.ico">
+                                    Repeat</TD><TD width="88%"
+                                    colspan="3">Repeat for:
+                                    TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[Counter2]/CdtTrfTxInf[],
+                                    Limit: TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[Counter2]/CdtTrfTxInf[#]</TD></TR>
+                                <TR>
+                                    <TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>pain.001.001.02[Counter1]/PmtInf[Counter2]/CdtTrfTxInf[Counter3]/CdtrAgt/FinInstnId/CmbndId/PstlAdr/Ctry
+                                    = &quot;AE&quot;</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    GetStringFromHeader</TD><TD
+                                    width="88%">Input,&quot;RemittanceInfoAE&quot;
+                                    to TEMP~RemittanceAE<BR>
+
+                                    <span>Node: Input</span>
+                                    <BR>
+
+                                    <span>Key: &quot;RemittanceInfoAE&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    GetStringFromHeader</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">Input,&quot;RemittanceInfoAE&quot;,&quot;/BENEFRES/AE//GDI&quot;
+                                    to TEMP~RemittanceAE<BR>
+
+                                    <span>Node: Input</span>
+                                    <BR>
+
+                                    <span>Key: &quot;RemittanceInfoAE&quot;</span>
+                                    <BR>
+
+                                    <span>Default: &quot;/BENEFRES/AE//GDI&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Log</TD><TD
+                                    width="88%">ALL,&quot;Replacing
+                                    RmtInfo
+                                    [%]
+                                    with [%]&quot;,TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[Counter2]/CdtTrfTxInf[Counter3]/RmtInf/Ustrd[1],TEMP~RemittanceAE<BR>
+
+                                    <span>DefaultValue: ALL</span>
+                                    <BR>
+
+                                    <span>Input1:
+                                    TEMP ~PainBatch[Out1]/pain.001.001.02/PmtInf[Counter2]/CdtTrfTxInf[Counter3]/RmtInf/Ustrd[1]</span>
+                                    <BR>
+
+                                    <span>Input2:
+                                    TEMP ~RemittanceAE</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">TEMP~RemittanceAE
+                                    to TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[Counter2]/CdtTrfTxInf[Counter3]/RmtInf/Ustrd[1]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%"></TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN
+                                class="textComments">Account Number Enrichment</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            GetStringFromHeader</TD><TD
+                            width="88%">Input,&quot;OwnAccountsConfiguration&quot;
+                            to TEMP~OwnAccountsConfiguration_String<BR>
+                            <span>Node: Input</span>
+                            <BR>
+                            <span>Key: &quot;OwnAccountsConfiguration&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            GetStringFromHeader</TD><TD width="88%"
+                            class="actionIsDisabled">Input,&quot;OwnAccountsConfiguration&quot;,&quot;&lt;?xml
+                            version=&quot;1.0&quot;?&gt;
+                            &lt;OwnAccountsConfiguration
+                            xsi:schemaLocation=&quot;SchemConfiguration
+                            C:/Users/viktor.nikolenko@swift.com/git/schem_integration/flows/xsd/SchemConfig.xsd&quot;
+                            xmlns=&quot;SchemConfiguration&quot;
+                            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+                            &lt;Account
+                            ID=&quot;40051571282097&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;London&lt;/BranchName&gt;
+                            &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;GPDC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;71282097&lt;/AccountNumber&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;71282113&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;400515-71282113&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;506600890&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            KSA&lt;/BranchName&gt;
+                            &lt;Sender&gt;SCP&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;SCP&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SCP&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;506600890&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SCP&lt;/OrderingCustomer&gt;
+                            &lt;Currency&gt;SAR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;30174368&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBUKLD&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            London&lt;/BranchName&gt;
+                            &lt;Sender&gt;SCPLONDON&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;SCPLONDON&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SCP&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;30174368&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SCPLONDON&lt;/OrderingCustomer&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;506600866&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            KSA&lt;/BranchName&gt;
+                            &lt;Sender&gt;JCPSA&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;JPCSA&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;JCP&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;506600866&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;JCPSA&lt;/OrderingCustomer&gt;
+                            &lt;Currency&gt;SAR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;506600246&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            KSA&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;SPCSA&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;506600246&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                            &lt;Currency&gt;SAR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;30174422&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;-&lt;/BranchName&gt;
+                            &lt;Sender&gt;SCP&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SCP&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;30174422&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SCP&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;SCP USD Residual
+                            Account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0030174422&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;30174422&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;30174465&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;-&lt;/BranchName&gt;
+                            &lt;Sender&gt;JCP&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;JCP&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;30174465&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;30174465&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;JCP&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;JCP USD Debt Service
+                            Account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0030174465&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;30174465&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;30174473&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;-&lt;/BranchName&gt;
+                            &lt;Sender&gt;JCP&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;JCP&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;30174473&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;30174473&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;JCP&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;JCP USD Debt Service
+                            Reserve Account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0030174473&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;30174473&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;50174878&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;-&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;50174878&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;50174878&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;SPC USD Debt Service
+                            Account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0050174878&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;50174878&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;50174886&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;-&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;50174886&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;50174886&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;SPC USD Debt Service
+                            Reserve Account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0050174886&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;50174886&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;50174924&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;-&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;50174924&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;50174924&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;SPC Euro Revenue
+                            Account&lt;/AccountName&gt;
+                            &lt;Currency&gt;EUR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0050174924&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;50174924&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;0506600890&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;506600890&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;0030174368&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;30174368&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;0506600866&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;506600866&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;0030174430&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;30174430&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;30174430&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBUKLD&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            London&lt;/BranchName&gt;
+                            &lt;Sender&gt;JCPLONDON&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;JPCLONDON&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;JCP&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;30174430&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;30174430&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;JCPLONDON&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;JCP USD Revenue
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0506600246&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;506600246&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;506600807&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            KSA&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;SPCSA&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;506600807&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;506600807&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;SPCO SAR Revenue
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;SAR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0506600807&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;506600807&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;50174851&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBUKLD&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            London&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCLONDON&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;SPCLONDON&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;50174851&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;50174851&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCLONDON&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;SPC USD Disbursement
+                            Account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0050174851&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;50174851&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;50174860&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBUKLD&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            London&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCLONDON&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;SPCLONDON&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;50174860&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;50174860&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCLONDON&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;SPCO USD Revenue
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0050174860&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;50174860&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;400515-71282097&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;London&lt;/BranchName&gt;
+                            &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;GPDC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;71282097&lt;/AccountNumber&gt;
+                            &lt;AccountName&gt;GPDC USD
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;71282097&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;400515-71282097&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;400515-71282113&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;London&lt;/BranchName&gt;
+                            &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;GPDC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;71282113&lt;/AccountNumber&gt;
+                            &lt;AccountName&gt;GPDC Euro
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;EUR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;71282113&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;400515-71282113&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;026241521001&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;Dubai&lt;/BranchName&gt;
+                            &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;GPDC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;026241521001&lt;/AccountNumber&gt;
+                            &lt;AccountName&gt;GPDC AED
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;AED&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account
+                            ID=&quot;SA8720000003230099550440&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;Riyad Bank
+                            ,KSA&lt;/BranchName&gt;
+                            &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;3230099550440&lt;/AccountNumber&gt;
+                            &lt;AccountName&gt;PCC RD USD
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;3230099550440&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;SA8720000003230099550440&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;SA5520000003230099559940&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;Riyad Bank
+                            ,KSA&lt;/BranchName&gt;
+                            &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;3230099550440&lt;/AccountNumber&gt;
+                            &lt;AccountName&gt;PCC RD SAR
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;SAR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;3230099559940&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;SA5520000003230099559940&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;3010602079901&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;Riyad Bank
+                            ,KSA&lt;/BranchName&gt;
+                            &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;3010602079901&lt;/AccountNumber&gt;
+                            &lt;Currency&gt;SAR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account
+                            ID=&quot;SA0840000000000220188998&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;Petrochemical Conversion
+                            Co Ltd&lt;/BranchName&gt;
+                            &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;220188998&lt;/AccountNumber&gt;
+                            &lt;AccountName&gt;PCC Samba USD
+                            account&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;220188998&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BranchName&gt;Petrochemical Conversion
+                            Co Ltd&lt;/BranchName&gt;
+                            &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                            &lt;AccountNumber&gt;SA0840000000000220188998&lt;/AccountNumber&gt;
+                            &lt;AccountName&gt;PCC USD Account
+                            Samba&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0220188998&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;220188998&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;506600904&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba,
+                            KSA&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;SPCSA&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;506600904&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;506600904&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCO&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;Saudi Polymers
+                            Zakat&lt;/AccountName&gt;
+                            &lt;Currency&gt;SAR&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;0506600904&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;506600904&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;00506600904&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;506600904&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;50174908&quot;&gt;
+                            &lt;Information&gt;
+                            &lt;BIC&gt;SAMBGB2L&lt;/BIC&gt;
+                            &lt;BranchName&gt;Samba
+                            London&lt;/BranchName&gt;
+                            &lt;Sender&gt;SPCLondon&lt;/Sender&gt;
+                            &lt;CustomerSpecifiedReference&gt;SPCLondon&lt;/CustomerSpecifiedReference&gt;
+                            &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                            &lt;AccountNumberSAP&gt;50174908&lt;/AccountNumberSAP&gt;
+                            &lt;AccountNumber&gt;50174908&lt;/AccountNumber&gt;
+                            &lt;OrderingCustomer&gt;SPCO&lt;/OrderingCustomer&gt;
+                            &lt;AccountName&gt;SPC USD Residual
+                            Acc&lt;/AccountName&gt;
+                            &lt;Currency&gt;USD&lt;/Currency&gt;
+                            &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                            &lt;/Information&gt;     &lt;/Account&gt;
+                            &lt;Account ID=&quot;050174908&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;50174908&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;     &lt;Account
+                            ID=&quot;0050174908&quot;&gt;
+                            &lt;RedirectAccountNumber&gt;50174908&lt;/RedirectAccountNumber&gt;
+                            &lt;/Account&gt;
+                            &lt;/OwnAccountsConfiguration&gt;&quot; to TEMP~OwnAccountsConfiguration_String<BR>
+                            <span>Node: Input</span>
+                            <BR>
+                            <span>Key: &quot;OwnAccountsConfiguration&quot;</span>
+                            <BR>
+                            <span>Default: &quot;&lt;?xml
+                                version=&quot;1.0&quot;?&gt;
+                                &lt;OwnAccountsConfiguration
+                                xsi:schemaLocation=&quot;SchemConfiguration
+                                C:/Users/viktor.nikolenko@swift.com/git/schem_integration/flows/xsd/SchemConfig.xsd&quot;
+                                xmlns=&quot;SchemConfiguration&quot;
+                                xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+                                &lt;Account
+                                ID=&quot;40051571282097&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;London&lt;/BranchName&gt;
+                                &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;GPDC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;71282097&lt;/AccountNumber&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;  &lt;Account
+                                ID=&quot;71282113&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;400515-71282113&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;506600890&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                KSA&lt;/BranchName&gt;
+                                &lt;Sender&gt;SCP&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;SCP&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SCP&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;506600890&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SCP&lt;/OrderingCustomer&gt;
+                                &lt;Currency&gt;SAR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;30174368&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBUKLD&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                London&lt;/BranchName&gt;
+                                &lt;Sender&gt;SCPLONDON&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;SCPLONDON&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SCP&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;30174368&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SCPLONDON&lt;/OrderingCustomer&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;506600866&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                KSA&lt;/BranchName&gt;
+                                &lt;Sender&gt;JCPSA&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;JPCSA&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;JCP&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;506600866&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;JCPSA&lt;/OrderingCustomer&gt;
+                                &lt;Currency&gt;SAR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;506600246&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                KSA&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;SPCSA&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;506600246&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                                &lt;Currency&gt;SAR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;30174422&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;-&lt;/BranchName&gt;
+                                &lt;Sender&gt;SCP&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SCP&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;30174422&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SCP&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;SCP USD Residual
+                                Account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0030174422&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;30174422&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;30174465&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;-&lt;/BranchName&gt;
+                                &lt;Sender&gt;JCP&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;JCP&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;30174465&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;30174465&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;JCP&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;JCP USD Debt Service
+                                Account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0030174465&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;30174465&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;30174473&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;-&lt;/BranchName&gt;
+                                &lt;Sender&gt;JCP&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;JCP&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;30174473&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;30174473&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;JCP&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;JCP USD Debt Service
+                                Reserve Account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0030174473&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;30174473&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;50174878&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;-&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;50174878&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;50174878&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;SPC USD Debt Service
+                                Account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0050174878&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;50174878&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;50174886&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;-&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;50174886&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;50174886&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;SPC USD Debt Service
+                                Reserve Account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0050174886&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;50174886&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;50174924&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;-&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;-&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;50174924&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;50174924&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;SPC Euro Revenue
+                                Account&lt;/AccountName&gt;
+                                &lt;Currency&gt;EUR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0050174924&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;50174924&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0506600890&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;506600890&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0030174368&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;30174368&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0506600866&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;506600866&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0030174430&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;30174430&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;30174430&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBUKLD&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                London&lt;/BranchName&gt;
+                                &lt;Sender&gt;JCPLONDON&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;JPCLONDON&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;JCP&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;30174430&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;30174430&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;JCPLONDON&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;JCP USD Revenue
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0506600246&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;506600246&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;506600807&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                KSA&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;SPCSA&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;506600807&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;506600807&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCSA&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;SPCO SAR Revenue
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;SAR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0506600807&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;506600807&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;50174851&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBUKLD&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                London&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCLONDON&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;SPCLONDON&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;50174851&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;50174851&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCLONDON&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;SPC USD Disbursement
+                                Account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0050174851&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;50174851&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;50174860&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBUKLD&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                London&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCLONDON&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;SPCLONDON&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;50174860&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;50174860&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCLONDON&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;SPCO USD Revenue
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0050174860&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;50174860&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;400515-71282097&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;London&lt;/BranchName&gt;
+                                &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;GPDC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;71282097&lt;/AccountNumber&gt;
+                                &lt;AccountName&gt;GPDC USD
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;71282097&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;400515-71282097&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;400515-71282113&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;London&lt;/BranchName&gt;
+                                &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;GPDC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;71282113&lt;/AccountNumber&gt;
+                                &lt;AccountName&gt;GPDC Euro
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;EUR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;71282113&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;400515-71282113&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;026241521001&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;Dubai&lt;/BranchName&gt;
+                                &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;GPDC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;026241521001&lt;/AccountNumber&gt;
+                                &lt;AccountName&gt;GPDC AED
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;AED&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;SA8720000003230099550440&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;Riyad Bank
+                                ,KSA&lt;/BranchName&gt;
+                                &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;3230099550440&lt;/AccountNumber&gt;
+                                &lt;AccountName&gt;PCC RD USD
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;3230099550440&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;SA8720000003230099550440&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;SA5520000003230099559940&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;Riyad Bank
+                                ,KSA&lt;/BranchName&gt;
+                                &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;3230099550440&lt;/AccountNumber&gt;
+                                &lt;AccountName&gt;PCC RD SAR
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;SAR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;3230099559940&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;SA5520000003230099559940&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;3010602079901&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;Riyad Bank
+                                ,KSA&lt;/BranchName&gt;
+                                &lt;CustomerSpecifiedReference&gt;void&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;3010602079901&lt;/AccountNumber&gt;
+                                &lt;Currency&gt;SAR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;SA0840000000000220188998&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;Petrochemical
+                                Conversion Co Ltd&lt;/BranchName&gt;
+                                &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;220188998&lt;/AccountNumber&gt;
+                                &lt;AccountName&gt;PCC Samba USD
+                                account&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;220188998&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BranchName&gt;Petrochemical
+                                Conversion Co Ltd&lt;/BranchName&gt;
+                                &lt;BusinessUnit&gt;PCC&lt;/BusinessUnit&gt;
+                                &lt;AccountNumber&gt;SA0840000000000220188998&lt;/AccountNumber&gt;
+                                &lt;AccountName&gt;PCC USD Account
+                                Samba&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0220188998&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;220188998&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;506600904&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBSARI&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba,
+                                KSA&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCSA&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;SPCSA&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;506600904&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;506600904&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCO&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;Saudi Polymers
+                                Zakat&lt;/AccountName&gt;
+                                &lt;Currency&gt;SAR&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0506600904&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;506600904&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;00506600904&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;506600904&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;50174908&quot;&gt;
+                                &lt;Information&gt;
+                                &lt;BIC&gt;SAMBGB2L&lt;/BIC&gt;
+                                &lt;BranchName&gt;Samba
+                                London&lt;/BranchName&gt;
+                                &lt;Sender&gt;SPCLondon&lt;/Sender&gt;
+                                &lt;CustomerSpecifiedReference&gt;SPCLondon&lt;/CustomerSpecifiedReference&gt;
+                                &lt;BusinessUnit&gt;SPCO&lt;/BusinessUnit&gt;
+                                &lt;AccountNumberSAP&gt;50174908&lt;/AccountNumberSAP&gt;
+                                &lt;AccountNumber&gt;50174908&lt;/AccountNumber&gt;
+                                &lt;OrderingCustomer&gt;SPCO&lt;/OrderingCustomer&gt;
+                                &lt;AccountName&gt;SPC USD Residual
+                                Acc&lt;/AccountName&gt;
+                                &lt;Currency&gt;USD&lt;/Currency&gt;
+                                &lt;ExcludeFromSAPReport&gt;false&lt;/ExcludeFromSAPReport&gt;
+                                &lt;/Information&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;050174908&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;50174908&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt;     &lt;Account
+                                ID=&quot;0050174908&quot;&gt;
+                                &lt;RedirectAccountNumber&gt;50174908&lt;/RedirectAccountNumber&gt;
+                                &lt;/Account&gt; &lt;/OwnAccountsConfiguration&gt;&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Parse</TD><TD
+                            width="88%">TEMP~OwnAccountsConfiguration_String,false,false
+                            to TEMP~OwnAccountsConfiguration<BR>
+                            <span>AbortIfInvalid: false</span>
+                            <BR>
+                            <span>DefaultValue: false</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>TEMP~OwnAccountsConfiguration HasExceptions</SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/blank.ico">
+                                    Comment</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting"><SPAN
+                                    class="textComments">This
+                                    should not
+                                    happen as the
+                                    Account
+                                    Configuration
+                                    File should be
+                                    validated upon
+                                    reading it with
+                                    the IPLA Component</SPAN>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Log</TD><TD
+                                    width="88%">ERROR,&quot;Account
+                                    Enrichment File
+                                    invalid. No account replacement.&quot;<BR>
+                                    <span>LogLevel: ERROR</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_repeat.ico">
+                                    Repeat</TD><TD
+                                    width="88%"
+                                    colspan="3">Repeat
+                                    for:
+                                    TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[],
+                                    Limit: TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[#]</TD></TR>
+                                    <TR>
+                                    <TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/blank.ico">
+                                    Comment</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting"><SPAN
+                                    class="textComments">Get
+                                    Account
+                                    Number
+                                    Line
+                                    41 -
+                                    44
+                                    of JCD</SPAN>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[Counter2]/DbtrAcct/Id/PrtryAcct/Id IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD
+                                    colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[Counter2]/DbtrAcct/Id/PrtryAcct/Id
+                                    to TEMP~AccountNumber<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    RegexReplace</TD><TD
+                                    width="88%">TEMP~AccountNumber,&quot;[^0-9A-Za-z]+&quot;,VALUE~EMPTY
+                                    to TEMP~AccountNumber<BR>
+
+                                    <span>Regex: &quot;[^0-9A-Za-z]+&quot;</span>
+                                    <BR>
+
+                                    <span>With:
+                                    VALUE ~EMPTY</span>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">VALUE~EMPTY
+                                    to TEMP~AccountNumberFromProperties<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/blank.ico">
+                                    Comment</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting"><SPAN
+                                    class="textComments">No
+                                    redirection
+                                    for
+                                    HSBC
+                                    flow
+                                    -&gt;
+                                    see SAI</SPAN>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class="actionIsDisabled">TEMP~OwnAccountsConfiguration/Account[@ID
+                                    =
+                                    $tmp:AccountNumber]/RedirectAccountNumber IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+
+                                    <TR width="100%">
+
+                                    <TD
+                                    colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">TEMP~OwnAccountsConfiguration/Account[@ID
+                                    =
+                                    $tmp:AccountNumber]/RedirectAccountNumber
+                                    to TEMP~AccountNumber<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE width="100%"></TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">TEMP~OwnAccountsConfiguration/Account[@ID
+                                    =
+                                    $tmp:AccountNumber]/Information/AccountNumber
+                                    to TEMP~AccountNumberFromProperties<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>TEMP~AccountNumberFromProperties IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+
+                                    <TR width="100%">
+
+                                    <TD
+                                    colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">TEMP~AccountNumberFromProperties
+                                    to TEMP~PainBatch[Out1]/pain.001.001.02/PmtInf[Counter2]/DbtrAcct/Id/PrtryAcct/Id<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Log</TD><TD
+                                    width="88%">WARN,&quot;Properties
+                                    for
+                                    [%]
+                                    not
+                                    found.
+                                    No
+                                    account replacement.&quot;,TEMP~AccountNumber<BR>
+
+                                    <span>LogLevel: WARN</span>
+                                    <BR>
+
+                                    <span>Input1:
+                                    TEMP ~AccountNumber</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%"></TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN
+                                class="textComments">SEPA Payments</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            GetStringFromHeader</TD><TD
+                            width="88%">Input,&quot;CurrencyType&quot;
+                            to TEMP~CurrencyType<BR>
+                            <span>Node: Input</span>
+                            <BR>
+                            <span>Key: &quot;CurrencyType&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>TEMP~CurrencyType = &quot;EUR&quot;</SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;XXXXX400515&quot;
+                                    to TEMP~PainBatch[Out1]/pain.001.001.02/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId/Id<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%"></TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Format</TD><TD
+                            width="88%">TEMP~PainBatch[Out1],false to TEMP~tempString<BR>
+                            <span>DefaultValue: false</span>
+                            <BR>
+                            <span>FixedValue: false</span>
+                            <BR>
+                            <span>DefaultValue: false</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Concatenate</TD><TD
+                            width="88%">Output,TEMP~tempString to Output<BR>
+                            <span>Input1: Output</span>
+                            <BR>
+                            <span>Input2: TEMP ~tempString</span>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Join</TD><TD
+                width="88%">TEMP~MessageInfo[],&quot;$$$&quot; to TEMP~HSBCMessageInfo<BR>
+                <span>Separator: &quot;$$$&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                CopyToHeaders</TD><TD width="88%">TEMP~HSBCMessageInfo
+                to Output<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">End Of Mapping</SPAN></BODY>
+</HTML>

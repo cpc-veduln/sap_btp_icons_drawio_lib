@@ -1,0 +1,489 @@
+<HTML><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>MT940PagesToCompleteMT940</TITLE>
+    <LINK href="..\..\..\..\/css/defaultMappingStyleSheet.css"
+        type="text/css" rel="stylesheet">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <H3>Translator  Mapping Definition: MT940PagesToCompleteMT940</H3>
+    <TABLE class="MappingDefHeadingTable">
+        <TD  colspan="2"></TD ><TD>&nbsp;</TD><TR class="smallerMappingHeader">
+            <TD>Name</TD><TD>&nbsp;:</TD><TD>MT940PagesToCompleteMT940</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Type</TD><TD>&nbsp;:</TD><TD>Mapping Definition</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Group</TD><TD>&nbsp;:</TD><TD>Map:MTReports</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Project</TD><TD>&nbsp;:</TD><TD>C:\No_Backup\Projects\schemintegration\transformations\schmsade\src\main\resources\SCHEM_Transformations.tpj</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Part of Library</TD><TD>&nbsp;:</TD><TD>N</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Date Printed</TD><TD>&nbsp;:</TD><TD>Wed Mar 20 15:02:11
+                CET 2024</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>User</TD><TD>&nbsp;:</TD><TD>tvanassc</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Publishing Description</TD><TD>&nbsp;:</TD><TD></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Input Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">Input</TD><TD
+                class="tddescbgcolor">Msg:MT940</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">true</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Output Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">MT940</TD><TD
+                class="tddescbgcolor">Msg:MT940</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B></B>
+    <TABLE border="1" width="80%"></TABLE><BR></BR><SPAN
+        class="headingMappingColour">Mapping
+        Actions</SPAN><BR></BR><TABLE width="100%" class="actionTableHeading">
+        <TR>
+            <TD width="13%">Action</TD><TD width="88%">Details</TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_copy_simple.ico">
+                Copy</TD><TD width="88%">Input[1] to Output<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN class>Input[#] &gt; &quot;1&quot;</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    RemoveAll</TD><TD width="88%">Block4/ActivityDetails[]<BR>
+                                    <span>Target: Block4/ActivityDetails[]</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    RemoveNode</TD><TD width="88%">Block4/StatementNumSeqNum/SequenceNumber<BR>
+                                    <span>Target: Block4/StatementNumSeqNum/SequenceNumber</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_repeat.ico">
+                                    Repeat</TD><TD width="88%"
+                                    colspan="3">Repeat for: Input[],
+                                    Limit: Input[#]</TD></TR>
+                                <TR>
+                                    <TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_repeat.ico">
+                                    Repeat</TD><TD
+                                    width="88%"
+                                    colspan="3">Repeat
+                                    for:
+                                    Input[Counter1]/Block4/ActivityDetails[],
+                                    Output to:
+                                    Block4/ActivityDetails[],
+                                    Limit: Input[Counter1]/Block4/ActivityDetails[#]</TD></TR>
+                                    <TR>
+                                    <TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Input[Counter1]/Block4/ActivityDetails[Counter2]
+                                    to Block4/ActivityDetails[Out1]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>Input[Counter1]/Block4/OpeningBalance/FinalBalance IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    RemoveNode</TD><TD width="88%">Block4/OpeningBalance<BR>
+
+                                    <span>Target: Block4/OpeningBalance</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Input[Counter1]/Block4/OpeningBalance/FinalBalance
+                                    to Block4/OpeningBalance/FinalBalance<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%"></TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Log</TD><TD
+                                    width="88%">ALL,&quot;counter:
+                                    %, total: %&quot;,REP~Counter1,Input[#]<BR>
+                                    <span>DefaultValue: ALL</span>
+                                    <BR>
+                                    <span>Input1: TEMP ~Counter1</span>
+                                    <BR>
+                                    <span>Input2: Input</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>(Input[Counter1]/Block4/ClosBal_BookedFunds/FinalBalance
+                                    IsPresent OR
+                                    REP~Counter1 = Input[#])</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    RemoveNode</TD><TD width="88%">Block4/ClosBal_BookedFunds<BR>
+
+                                    <span>Target: Block4/ClosBal_BookedFunds</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Input[Counter1]/Block4/ClosBal_BookedFunds/IntermediateBalance
+                                    to Block4/ClosBal_BookedFunds/IntermediateBalance<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Input[Counter1]/Block4/ClosBal_BookedFunds/FinalBalance
+                                    to Block4/ClosBal_BookedFunds/FinalBalance<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    RemoveNode</TD><TD width="88%">Block4/ClosAvailBal_AvailFunds<BR>
+
+                                    <span>Target: Block4/ClosAvailBal_AvailFunds</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Input[Counter1]/Block4/ClosAvailBal_AvailFunds
+                                    to Block4/ClosAvailBal_AvailFunds<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    RemoveAll</TD><TD width="88%">Block4/ForwardAvailableBal[]<BR>
+
+                                    <span>Target: Block4/ForwardAvailableBal[]</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_repeat.ico">
+                                    Repeat</TD><TD
+                                    width="88%"
+                                    colspan="3">Repeat
+                                    for:
+                                    Input[Counter1]/Block4/ForwardAvailableBal[],
+                                    Output
+                                    to:
+                                    Block4/ForwardAvailableBal[],
+                                    Limit: Input[Counter1]/Block4/ForwardAvailableBal[#]</TD></TR>
+                                    <TR>
+
+                                    <TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Input[Counter1]/Block4/ForwardAvailableBal[Counter3]
+                                    to Block4/ForwardAvailableBal[Out3]<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>Input[Counter1]/Block4/InfoToAcctOwner IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+
+                                    <TD
+                                    colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Input[Counter1]/Block4/InfoToAcctOwner
+                                    to Block4/InfoToAcctOwner<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+
+                                    <TABLE width="100%"></TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%"></TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%"></TABLE>
+            </TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">End Of Mapping</SPAN></BODY>
+</HTML>

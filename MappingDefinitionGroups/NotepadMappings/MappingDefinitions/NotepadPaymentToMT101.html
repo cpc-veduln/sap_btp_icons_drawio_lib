@@ -1,0 +1,174 @@
+<HTML><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>NotepadPaymentToMT101</TITLE>
+    <LINK href="..\..\..\..\/css/defaultMappingStyleSheet.css"
+        type="text/css" rel="stylesheet">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <H3>Translator  Mapping Definition: NotepadPaymentToMT101</H3>
+    <TABLE class="MappingDefHeadingTable">
+        <TD  colspan="2"></TD ><TD>&nbsp;</TD><TR class="smallerMappingHeader">
+            <TD>Name</TD><TD>&nbsp;:</TD><TD>NotepadPaymentToMT101</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Type</TD><TD>&nbsp;:</TD><TD>Mapping Definition</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Group</TD><TD>&nbsp;:</TD><TD>Map:NotepadMappings</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Project</TD><TD>&nbsp;:</TD><TD>C:\No_Backup\Projects\schemintegration\transformations\schmsade\src\main\resources\SCHEM_Transformations.tpj</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Part of Library</TD><TD>&nbsp;:</TD><TD>N</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Date Printed</TD><TD>&nbsp;:</TD><TD>Wed Mar 20 15:02:12
+                CET 2024</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>User</TD><TD>&nbsp;:</TD><TD>tvanassc</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Publishing Description</TD><TD>&nbsp;:</TD><TD></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Input Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">NotepadPaymentBatch</TD><TD
+                class="tddescbgcolor">Msg:NotepadPaymentBatch</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Output Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">MT101</TD><TD
+                class="tddescbgcolor">Msg:MT101</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">true</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Temporary Variable Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tmpValue</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tmpNotepadPaymentBatch</TD><TD
+                class="tddescbgcolor">Msg:NotepadPaymentBatch</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">Mapping
+        Actions</SPAN><BR></BR><TABLE width="100%" class="actionTableHeading">
+        <TR>
+            <TD width="13%">Action</TD><TD width="88%">Details</TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Cleanup illegal characters</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Format</TD><TD width="88%">NotepadPaymentBatch,false to TEMP~tmpValue<BR>
+                <span>DefaultValue: false</span>
+                <BR>
+                <span>FixedValue: false</span>
+                <BR>
+                <span>DefaultValue: false</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Replace</TD><TD width="88%">TEMP~tmpValue to TEMP~tmpValue<BR>
+                <span>What: &quot;&amp;&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Replace</TD><TD width="88%">TEMP~tmpValue to TEMP~tmpValue<BR>
+                <span>What: &quot;#&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Replace</TD><TD width="88%">TEMP~tmpValue to TEMP~tmpValue<BR>
+                <span>What: &quot;%&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Replace</TD><TD width="88%">TEMP~tmpValue to TEMP~tmpValue<BR>
+                <span>What: &quot;@&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Parse</TD><TD width="88%">TEMP~tmpValue,true,false to TEMP~tmpNotepadPaymentBatch<BR>
+                <span>DefaultValue: true</span>
+                <BR>
+                <span>DefaultValue: false</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_repeat.ico">
+                Repeat</TD><TD width="88%" colspan="3">Repeat for:
+                NotepadPaymentBatch/Payments[], Limit: NotepadPaymentBatch/Payments[#]</TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            ReplicateHeaders</TD><TD
+                            width="88%">NotepadPaymentBatch to TEMP~tmpNotepadPaymentBatch/Payments[Counter1]/NotepadPayment<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px" src="..\..\..\..\/images/transform.ico">
+                            <A
+                                href="../../../../Summary/MappingDefinitionGroups/NotepadMappings/MappingDefinitions/NotepadPaymentToMT101Inner.html"> NotepadPaymentT...</A>
+                        </TD><TD
+                            width="88%">TEMP~tmpNotepadPaymentBatch/Payments[Counter1]/NotepadPayment
+                            to MT101[]<BR>
+                            <span>MT101: MT101</span>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">End Of Mapping</SPAN></BODY>
+</HTML>

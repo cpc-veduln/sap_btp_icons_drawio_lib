@@ -1,0 +1,583 @@
+<HTML><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>MT940ToConsolidatedCSVLine</TITLE>
+    <LINK href="..\..\..\..\/css/defaultMappingStyleSheet.css"
+        type="text/css" rel="stylesheet">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <H3>Translator  Mapping Definition: MT940ToConsolidatedCSVLine</H3>
+    <TABLE class="MappingDefHeadingTable">
+        <TD  colspan="2"></TD ><TD>&nbsp;</TD><TR class="smallerMappingHeader">
+            <TD>Name</TD><TD>&nbsp;:</TD><TD>MT940ToConsolidatedCSVLine</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Type</TD><TD>&nbsp;:</TD><TD>Mapping Definition</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Group</TD><TD>&nbsp;:</TD><TD>Map:MTReports</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Project</TD><TD>&nbsp;:</TD><TD>C:\No_Backup\Projects\schemintegration\transformations\schmsade\src\main\resources\SCHEM_Transformations.tpj</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Part of Library</TD><TD>&nbsp;:</TD><TD>N</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Date Printed</TD><TD>&nbsp;:</TD><TD>Wed Mar 20 15:02:11
+                CET 2024</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>User</TD><TD>&nbsp;:</TD><TD>tvanassc</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Publishing Description</TD><TD>&nbsp;:</TD><TD></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Input Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">MT940</TD><TD
+                class="tddescbgcolor">Msg:MT940</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Output Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">MT940CSV:ReportCSVLine</TD><TD
+                class="tddescbgcolor">Component:ReportCSVLine</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Temporary Variable Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">credits</TD><TD
+                class="tddescbgcolor">Bot:Decimal</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">debits</TD><TD
+                class="tddescbgcolor">Bot:Decimal</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tmp</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">Mapping
+        Actions</SPAN><BR></BR><TABLE width="100%" class="actionTableHeading">
+        <TR>
+            <TD width="13%">Action</TD><TD width="88%">Details</TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                GetStringFromHeader</TD><TD
+                width="88%">MT940,&quot;BusinessUnit&quot;,&quot;*****&quot;
+                to BusinessUnit<BR>
+                <span>Node: MT940</span>
+                <BR>
+                <span>Key: &quot;BusinessUnit&quot;</span>
+                <BR>
+                <span>Default: &quot;*****&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                GetStringFromHeader</TD><TD
+                width="88%">MT940,&quot;AccountName&quot;,&quot;-----------------------&quot;
+                to AccountName<BR>
+                <span>Node: MT940</span>
+                <BR>
+                <span>Key: &quot;AccountName&quot;</span>
+                <BR>
+                <span>Default: &quot;-----------------------&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN class="textComments">AccountId</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN
+                    class>MT940/Block4/AccountId/OptionP IsPresent</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">MT940/Block4/AccountId/OptionP/Account
+                                    to AccountNumber<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_else.ico">
+                            ELSE</TD><TD width="88%" colspan="2"><SPAN class></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">MT940/Block4/AccountId/NoOption
+                                    to AccountNumber<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Date, Currency and Opening Balance</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN
+                    class>MT940/Block4/OpeningBalance/FinalBalance IsPresent</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">MT940/Block4/OpeningBalance/FinalBalance/DatedCurrencyAmount/CurrencyAmount/Currency
+                                    to Currency<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%">MT940/Block4/OpeningBalance/FinalBalance/DatedCurrencyAmount/CurrencyAmount/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to OpeningBalance<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_else.ico">
+                            ELSE</TD><TD width="88%" colspan="2"><SPAN class></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">MT940/Block4/OpeningBalance/IntermediateBalance/DatedCurrencyAmount/CurrencyAmount/Currency
+                                    to Currency<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%">MT940/Block4/OpeningBalance/IntermediateBalance/DatedCurrencyAmount/CurrencyAmount/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to OpeningBalance<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Closing Amount</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_if.ico"> IF</TD><TD
+                width="88%" colspan="2"><SPAN
+                    class>MT940/Block4/ClosBal_BookedFunds/FinalBalance IsPresent</SPAN>
+                <BR>
+                <span></span>
+            </TD></TR>
+        <TR width="100%">
+            <TD colspan="3" width="100%"
+                    class="tableActionSetting"><TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if_then.ico">
+                            THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DateToText</TD><TD
+                                    width="88%">MT940/Block4/ClosBal_BookedFunds/FinalBalance/DatedCurrencyAmount/Date,dd/MM/yyyy
+                                    to Date<BR>
+                                    <span>Format: dd/MM/yyyy</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%">MT940/Block4/ClosBal_BookedFunds/FinalBalance/DatedCurrencyAmount/CurrencyAmount/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to ClosingBalance<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableIfThenElse">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_else.ico">
+                            ELSE</TD><TD width="88%" colspan="2"><SPAN class></SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR><TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DateToText</TD><TD
+                                    width="88%">MT940/Block4/ClosBal_BookedFunds/IntermediateBalance/DatedCurrencyAmount/Date,dd/MM/yyyy
+                                    to Date<BR>
+                                    <span>Format: dd/MM/yyyy</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    DecimalToText</TD><TD
+                                    width="88%">MT940/Block4/ClosBal_BookedFunds/IntermediateBalance/DatedCurrencyAmount/CurrencyAmount/Amount,Unsigned,.,Truncate,1.0,0.1
+                                    to ClosingBalance<BR>
+                                    <span>DefaultValue: Unsigned</span>
+                                    <BR>
+                                    <span>DefaultValue: .</span>
+                                    <BR>
+                                    <span>DefaultValue: Truncate</span>
+                                    <BR>
+                                    <span>DefaultValue: 1.0</span>
+                                    <BR>
+                                    <span>DefaultValue: 0.1</span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">Debtis, Credits</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_copy_simple.ico">
+                Copy</TD><TD width="88%">&quot;0&quot; to TEMP~credits<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR class="trevencolor">
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_copy_simple.ico">
+                Copy</TD><TD width="88%">&quot;0&quot; to TEMP~debits<BR>
+                <span></span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_repeat.ico">
+                Repeat</TD><TD width="88%" colspan="3">Repeat for:
+                MT940/Block4/ActivityDetails[], Limit: MT940/Block4/ActivityDetails[#]</TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>(MT940/Block4/ActivityDetails[Counter1]/StatementLine1/DebitOrCreditMark
+                                = &quot;C&quot; OR
+                                MT940/Block4/ActivityDetails[Counter1]/StatementLine1/DebitOrCreditMark
+                                = &quot;RD&quot;)</SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Sum</TD><TD
+                                    width="88%">MT940/Block4/ActivityDetails[Counter1]/StatementLine1/Amount,TEMP~credits
+                                    to TEMP~credits<BR>
+                                    <span>Input1: Block4/ActivityDetails[Counter1]/StatementLine1/Amount</span>
+                                    <BR>
+                                    <span>Input2: TEMP ~credits</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Sum</TD><TD
+                                    width="88%">MT940/Block4/ActivityDetails[Counter1]/StatementLine1/Amount,TEMP~debits
+                                    to TEMP~debits<BR>
+                                    <span>Input1: Block4/ActivityDetails[Counter1]/StatementLine1/Amount</span>
+                                    <BR>
+                                    <span>Input2: TEMP ~debits</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                DecimalToText</TD><TD
+                width="88%">TEMP~credits,Unsigned,.,Truncate,1.0,0.1 to Credits<BR>
+                <span>DefaultValue: Unsigned</span>
+                <BR>
+                <span>DefaultValue: .</span>
+                <BR>
+                <span>DefaultValue: Truncate</span>
+                <BR>
+                <span>DefaultValue: 1.0</span>
+                <BR>
+                <span>DefaultValue: 0.1</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                DecimalToText</TD><TD
+                width="88%">TEMP~debits,Unsigned,.,Truncate,1.0,0.1 to Debits<BR>
+                <span>DefaultValue: Unsigned</span>
+                <BR>
+                <span>DefaultValue: .</span>
+                <BR>
+                <span>DefaultValue: Truncate</span>
+                <BR>
+                <span>DefaultValue: 1.0</span>
+                <BR>
+                <span>DefaultValue: 0.1</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                Concatenate</TD><TD
+                width="88%">&quot;(&quot;,Debits,&quot;)&quot; to Debits<BR>
+                <span>Input1: &quot;(&quot;</span>
+                <BR>
+                <span>Input2: Debits</span>
+                <BR>
+                <span>Input3: &quot;)&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                PruneEmptyNodes</TD><TD width="88%">Output<BR>
+                <span>Target: Output</span>
+                <BR>
+                <span>DefaultValue: Immediate children only</span>
+                <BR>
+                <span>DefaultValue: true</span>
+                <BR>
+                <span>DefaultValue: true</span>
+                <BR>
+                <span>DefaultValue: false</span>
+                <BR>
+                <span>DefaultValue: false</span>
+            </TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">End Of Mapping</SPAN></BODY>
+</HTML>

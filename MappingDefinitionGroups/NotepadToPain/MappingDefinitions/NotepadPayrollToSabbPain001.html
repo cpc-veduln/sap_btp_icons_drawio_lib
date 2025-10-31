@@ -1,0 +1,1436 @@
+<HTML><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>NotepadPayrollToSabbPain001</TITLE>
+    <LINK href="..\..\..\..\/css/defaultMappingStyleSheet.css"
+        type="text/css" rel="stylesheet">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <H3>Translator  Mapping Definition: NotepadPayrollToSabbPain001</H3>
+    <TABLE class="MappingDefHeadingTable">
+        <TD  colspan="2"></TD ><TD>&nbsp;</TD><TR class="smallerMappingHeader">
+            <TD>Name</TD><TD>&nbsp;:</TD><TD>NotepadPayrollToSabbPain001</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Type</TD><TD>&nbsp;:</TD><TD>Mapping Definition</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Group</TD><TD>&nbsp;:</TD><TD>Map:NotepadToPain</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Project</TD><TD>&nbsp;:</TD><TD>C:\No_Backup\Projects\schemintegration\transformations\schmsade\src\main\resources\SCHEM_Transformations.tpj</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Part of Library</TD><TD>&nbsp;:</TD><TD>N</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Date Printed</TD><TD>&nbsp;:</TD><TD>Wed Mar 20 15:02:16
+                CET 2024</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>User</TD><TD>&nbsp;:</TD><TD>tvanassc</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Publishing Description</TD><TD>&nbsp;:</TD><TD></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Input Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">NotepadPayroll</TD><TD
+                class="tddescbgcolor">Msg:NotepadPayroll</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Output Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">Document</TD><TD
+                class="tddescbgcolor">Component:Document</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Temporary Variable Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">EmployerName</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">EmployerID</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">MOLEstablishmentID</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">BenName</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">DebtorAgent</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">Mapping
+        Actions</SPAN><BR></BR><TABLE width="100%" class="actionTableHeading">
+        <TR>
+            <TD width="13%">Action</TD><TD width="88%">Details</TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/folder_blue.ico"> Group</TD><TD
+                width="88%" colspan="3"></TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            GetStringFromHeader</TD><TD
+                            width="88%">Input,&quot;EmployerName&quot;
+                            to TEMP~EmployerName<BR>
+                            <span>Node: Input</span>
+                            <BR>
+                            <span>Key: &quot;EmployerName&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            GetStringFromHeader</TD><TD
+                            width="88%">Input,&quot;EmployerID&quot; to TEMP~EmployerID<BR>
+                            <span>Node: Input</span>
+                            <BR>
+                            <span>Key: &quot;EmployerID&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            GetStringFromHeader</TD><TD
+                            width="88%">Input,&quot;MOLEstablishmentID&quot;
+                            to TEMP~MOLEstablishmentID<BR>
+                            <span>Node: Input</span>
+                            <BR>
+                            <span>Key: &quot;MOLEstablishmentID&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            GetStringFromHeader</TD><TD
+                            width="88%">Input,&quot;DebtorAgentBIC&quot;
+                            to TEMP~DebtorAgent<BR>
+                            <span>Node: Input</span>
+                            <BR>
+                            <span>Key: &quot;DebtorAgentBIC&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Log</TD><TD width="88%">ALL,&quot;Name=[%]
+                            ID=[%], MOL=[%], BIC=[%]&quot;,TEMP~EmployerName,TEMP~EmployerID,TEMP~MOLEstablishmentID,TEMP~DebtorAgent<BR>
+                            <span>DefaultValue: ALL</span>
+                            <BR>
+                            <span>Input1: TEMP ~EmployerName</span>
+                            <BR>
+                            <span>Input2: TEMP ~EmployerID</span>
+                            <BR>
+                            <span>Input3: TEMP ~MOLEstablishmentID</span>
+                            <BR>
+                            <span>Input4: TEMP ~DebtorAgent</span>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/folder_blue.ico"> Group</TD><TD
+                width="88%" colspan="3"></TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">HeaderRecord/FileReference to pain.001.001.02/GrpHdr/MsgId<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            IntegerToText</TD><TD
+                            width="88%">HeaderRecord/TransactionCount,Unsigned
+                            to pain.001.001.02/GrpHdr/NbOfTxs<BR>
+                            <span>DefaultValue: Unsigned</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">VALUE~DateTimeNow
+                            to pain.001.001.02/GrpHdr/CreDtTm<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;SNGL&quot; to pain.001.001.02/GrpHdr/Grpg<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">&quot;SCHMSADE&quot; to pain.001.001.02/GrpHdr/InitgPty/Id/OrgId/BIC<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/folder_blue.ico"> Group</TD><TD
+                width="88%" colspan="3"></TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">HeaderRecord/FileReference to pain.001.001.02/PmtInf[1]/PmtInfId<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;TRF&quot; to pain.001.001.02/PmtInf[1]/PmtMtd<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;MPNS&quot; to pain.001.001.02/PmtInf[1]/PmtTpInf/ClrChanl<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/folder_blue.ico">
+                            Group</TD><TD width="88%" colspan="3"></TD></TR>
+                    <TR>
+                        <TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD width="88%"
+                                    colspan="2"><SPAN
+                                    class>(NOT(Transactions[1]/BasicSalary
+                                    IsPresent) OR
+                                    Transactions[1]/BasicSalary
+                                    = &quot;0&quot;)</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR width="100%">
+                                    <TD colspan="3" width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;O&quot;
+                                    to pain.001.001.02/PmtInf[1]/PmtTpInf/LclInstrm/Prtry<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;S&quot;
+                                    to pain.001.001.02/PmtInf[1]/PmtTpInf/LclInstrm/Prtry<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">Transactions[1]/ValueDate to pain.001.001.02/PmtInf[1]/ReqdExctnDt<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">TEMP~EmployerName
+                            to pain.001.001.02/PmtInf[1]/Dbtr/Nm<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;SA&quot; to pain.001.001.02/PmtInf[1]/Dbtr/PstlAdr/Ctry<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">TEMP~EmployerID to pain.001.001.02/PmtInf[1]/Dbtr/Id/PrvtId[1]/MplyrIdNb<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">TEMP~MOLEstablishmentID to pain.001.001.02/PmtInf[1]/Dbtr/Id/PrvtId[.NEW]/OthrId/Id<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;MOL
+                            Establishment ID&quot; to pain.001.001.02/PmtInf[1]/Dbtr/Id/PrvtId[.LAST]/OthrId/IdTp<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">Transactions[1]/DebitAccount to pain.001.001.02/PmtInf[1]/DbtrAcct/Id/PrtryAcct/Id<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">TEMP~DebtorAgent to pain.001.001.02/PmtInf[1]/DbtrAgt/FinInstnId/CmbndId/BIC<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;Saudi British
+                            Bank&quot; to pain.001.001.02/PmtInf[1]/DbtrAgt/FinInstnId/CmbndId/Nm<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;SA&quot; to pain.001.001.02/PmtInf[1]/DbtrAgt/FinInstnId/CmbndId/PstlAdr/Ctry<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/folder_blue.ico"> Group</TD><TD
+                width="88%" colspan="3"></TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_repeat.ico">
+                            Repeat</TD><TD width="88%"
+                            colspan="3">Repeat for: Transactions[],
+                            Output to:
+                            pain.001.001.02/PmtInf[1]/CdtTrfTxInf[],
+                            Limit: Transactions[#]</TD></TR>
+                    <TR>
+                        <TD></TD><TD colspan="3" width="100%"><TABLE
+                                width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/TransactionReference
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/PmtId/EndToEndId<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/Amount
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Amt/InstdAmt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/TransferCurrency
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Amt/InstdAmt/@Ccy<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/folder_blue.ico">
+                                    Group</TD><TD width="88%" colspan="3"></TD></TR>
+                                <TR>
+                                    <TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/EmployeeId
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Cdtr/Id/PrvtId[1]/OthrId/Id<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;Employee
+                                    Number&quot; to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Cdtr/Id/PrvtId[1]/OthrId/IdTp<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/folder_blue.ico">
+                                    Group</TD><TD width="88%" colspan="3"></TD></TR>
+                                <TR>
+                                    <TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;Beneficiary
+                                    ID&quot; to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Cdtr/Id/PrvtId[2]/OthrId/IdTp<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>Transactions[Counter1]/BeneficiaryId IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/BeneficiaryId
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Cdtr/Id/PrvtId[2]/OthrId/Id<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/EmployeeId
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Cdtr/Id/PrvtId[2]/OthrId/Id<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/BeneficiaryBankBIC
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/CdtrAgt/FinInstnId/CmbndId/BIC<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/BeneficiaryBankName
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/CdtrAgt/FinInstnId/CmbndId/Nm<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px" src="..\..\..\..\/images/transform.ico">
+                                    <A
+                                    href="../../../../Summary/MessageDefinitionGroups/SWIFT2018-Common/MappingDefinitions/IdCode.html"> SWIFT-Common:Id...</A>
+                                    </TD><TD
+                                    width="88%">Transactions[Counter1]/BeneficiaryBankBIC
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/CdtrAgt/FinInstnId/CmbndId/PstlAdr/Ctry<BR>
+                                    <span>IdCodeCountryCode: pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/CdtrAgt/FinInstnId/CmbndId/PstlAdr/Ctry</span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/folder_blue.ico">
+                                    Group</TD><TD width="88%" colspan="3"></TD></TR>
+                                <TR>
+                                    <TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Replace</TD><TD
+                                    width="88%">Transactions[Counter1]/BeneficiaryName
+                                    to TEMP~BenName<BR>
+                                    <span>What: &quot;-&quot;</span>
+                                    <BR>
+                                    <span>With: &quot; &quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Replace</TD><TD
+                                    width="88%">TEMP~BenName
+                                    to TEMP~BenName<BR>
+                                    <span>What: &quot;.&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Trim</TD><TD
+                                    width="88%">TEMP~BenName
+                                    to TEMP~BenName</TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>TEMP~BenName
+                                    Length &lt;=
+                                    &quot;35&quot; </SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">TEMP~BenName
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Cdtr/Nm<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    CopySubstring</TD><TD
+                                    width="88%">TEMP~BenName
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/Cdtr/Nm<BR>
+
+                                    <span>Start: &quot;1&quot;</span>
+                                    <BR>
+
+                                    <span>Length: &quot;35&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/BeneficiaryAccount
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/CdtrAcct/Id/IBAN<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/folder_blue.ico">
+                                    Group</TD><TD width="88%" colspan="3"></TD></TR>
+                                <TR>
+                                    <TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/blank.ico">
+                                    Comment</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting"><SPAN
+                                    class="textComments">Basic Salary</SPAN>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;BBS&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.NEW]/RgltryDtls/Cd<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/TransferCurrency
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/@Ccy<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;MIS&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Inf<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>Transactions[Counter1]/BasicSalary IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/BasicSalary
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;0&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/blank.ico">
+                                    Comment</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting"><SPAN
+                                    class="textComments">House Allowance</SPAN>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;HAL&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.NEW]/RgltryDtls/Cd<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/TransferCurrency
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/@Ccy<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;MIS&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Inf<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>Transactions[Counter1]/HousingAllowance IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/HousingAllowance
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;0&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/blank.ico">
+                                    Comment</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting"><SPAN
+                                    class="textComments">Other Allowance</SPAN>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;OER&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.NEW]/RgltryDtls/Cd<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/TransferCurrency
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/@Ccy<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;MIS&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Inf<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>Transactions[Counter1]/OtherEarnings IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/OtherEarnings
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;0&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/blank.ico">
+                                    Comment</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting"><SPAN class="textComments">Deductions</SPAN>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;DED&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.NEW]/RgltryDtls/Cd<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/TransferCurrency
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/@Ccy<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;MIS&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Inf<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>Transactions[Counter1]/Deductions IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/Deductions
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;0&quot;
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/RgltryRptg[.LAST]/RgltryDtls/Amt/#value<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableActionSetting">
+                                <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">Transactions[Counter1]/Narrative
+                                    to pain.001.001.02/PmtInf[1]/CdtTrfTxInf[Out1]/InstrForDbtrAgt<BR>
+                                    <span></span>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">End Of Mapping</SPAN></BODY>
+</HTML>

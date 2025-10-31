@@ -1,0 +1,1405 @@
+<HTML><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>SambaVendorXMLToMT101</TITLE>
+    <LINK href="..\..\..\..\/css/defaultMappingStyleSheet.css"
+        type="text/css" rel="stylesheet">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <H3>Translator  Mapping Definition: SambaVendorXMLToMT101</H3>
+    <TABLE class="MappingDefHeadingTable">
+        <TD  colspan="2"></TD ><TD>&nbsp;</TD><TR class="smallerMappingHeader">
+            <TD>Name</TD><TD>&nbsp;:</TD><TD>SambaVendorXMLToMT101</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Type</TD><TD>&nbsp;:</TD><TD>Mapping Definition</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Group</TD><TD>&nbsp;:</TD><TD>Map:MSDVendor</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Project</TD><TD>&nbsp;:</TD><TD>C:\No_Backup\Projects\schemintegration\transformations\schmsade\src\main\resources\SCHEM_Transformations.tpj</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Part of Library</TD><TD>&nbsp;:</TD><TD>N</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Date Printed</TD><TD>&nbsp;:</TD><TD>Wed Mar 20 15:02:10
+                CET 2024</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>User</TD><TD>&nbsp;:</TD><TD>tvanassc</TD></TR>
+        <TR class="smallerMappingHeader">
+            <TD>Publishing Description</TD><TD>&nbsp;:</TD><TD></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Input Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">XML</TD><TD
+                class="tddescbgcolor">Component:XML</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Output Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">Output</TD><TD
+                class="tddescbgcolor">Msg:MT101</TD><TD
+                class="tddescbgcolor">false</TD><TD
+                class="tddescbgcolor">true</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><B class="HeaderFont">Temporary Variable Definitions</B>
+    <TABLE border="1" width="80%" class="tablebgcolor">
+        <TR class="headingcolor">
+            <TH width="20%">Name</TH>
+            <TH width="20%">Configuration Type</TH>
+            <TH width="5%">Optional</TH>
+            <TH width="5%">Repeating</TH>
+            <TH width="20%">Description</TH>
+        </TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">values</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">true</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">senderBIC11</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">receiverBIC11</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tmpValue</TD><TD
+                class="tddescbgcolor">Bot:String</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+        <TR class="inputOutput">
+            <TD class="tdtitlebgcolor">tmpInt</TD><TD
+                class="tddescbgcolor">Bot:Integer</TD><TD
+                class="tddescbgcolor">true</TD><TD
+                class="tddescbgcolor">false</TD><TD class="tddescbgcolor"></TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">Mapping
+        Actions</SPAN><BR></BR><TABLE width="100%" class="actionTableHeading">
+        <TR>
+            <TD width="13%">Action</TD><TD width="88%">Details</TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/blank.ico">
+                Comment</TD><TD width="88%"
+                    class="tableActionSetting"><SPAN
+                    class="textComments">TODO: remove default values for production</SPAN>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                GetStringFromHeader</TD><TD
+                width="88%">Input,&quot;SenderBIC11&quot;,&quot;SWHQBEBBXXX&quot;
+                to TEMP~senderBIC11<BR>
+                <span>Node: Input</span>
+                <BR>
+                <span>Key: &quot;SenderBIC11&quot;</span>
+                <BR>
+                <span>Default: &quot;SWHQBEBBXXX&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px" src="..\..\..\..\/images/scroll.ico">
+                GetStringFromHeader</TD><TD
+                width="88%">Input,&quot;ReceiverBIC11&quot;,&quot;SWHQBEBBXXX&quot;
+                to TEMP~receiverBIC11<BR>
+                <span>Node: Input</span>
+                <BR>
+                <span>Key: &quot;ReceiverBIC11&quot;</span>
+                <BR>
+                <span>Default: &quot;SWHQBEBBXXX&quot;</span>
+            </TD></TR>
+    </TABLE>
+    <TABLE width="100%" class="tableActionSetting">
+        <TR>
+            <TD width="13%" class="headingActionName"><IMG height="16px"
+                    width="16px"
+                src="..\..\..\..\/images/action_repeat.ico">
+                Repeat</TD><TD width="88%" colspan="3">Repeat for:
+                LedgerJournalTrans[], Output to: Output[], Limit: LedgerJournalTrans[#]</TD></TR>
+        <TR>
+            <TD></TD><TD colspan="3" width="100%"><TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            ReplicateHeaders</TD><TD width="88%">Input
+                            to Output[Out1]<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">Blocks123</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px" src="..\..\..\..\/images/transform.ico">
+                            <A
+                                href="../../../../Summary/MappingDefinitionGroups/NotepadMappings/MappingDefinitions/BuildMT101Blocks123.html"> notepad:BuildMT...</A>
+                        </TD><TD
+                            width="88%">TEMP~senderBIC11,TEMP~receiverBIC11
+                            to Output[Out1]/s:Blocks123<BR>
+                            <span>SenderBIC11: TEMP ~senderBIC11</span>
+                            <BR>
+                            <span>ReceiverBIC11: TEMP ~receiverBIC11</span>
+                            <BR>
+                            <span>Blocks123: s:Blocks123</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">Block4</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">SeqA</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>LedgerJournalTrans[Counter1]/SenderReference
+                                Length &gt; &quot;16&quot; </SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    CopySubstring</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/SenderReference
+                                    to Output[Out1]/Block4/GeneralInfo/SendersReference<BR>
+                                    <span>Start: &quot;1&quot;</span>
+                                    <BR>
+                                    <span>Length: &quot;16&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/SenderReference
+                                    to Output[Out1]/Block4/GeneralInfo/SendersReference<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;PCCSA&quot;
+                            to Output[Out1]/Block4/GeneralInfo/CustomerSpecifiedRef<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            RemoveAll</TD><TD width="88%">TEMP~values[]<BR>
+                            <span>Target: TEMP ~values[]</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            TextToInteger</TD><TD
+                            width="88%">&quot;1&quot;,Unsigned to Output[Out1]/Block4/GeneralInfo/MessageIndexOrTot/MessageIndex<BR>
+                            <span>DefaultValue: Unsigned</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            TextToInteger</TD><TD
+                            width="88%">&quot;1&quot;,Unsigned to Output[Out1]/Block4/GeneralInfo/MessageIndexOrTot/Total<BR>
+                            <span>DefaultValue: Unsigned</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/ReceiverBICCode
+                            to Output[Out1]/Block4/GeneralInfo/AcctServicingInst/OptionA/IdCode<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            TextToDate</TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/RequestedExecutionDate,yyyy/MM/dd
+                            to Output[Out1]/Block4/GeneralInfo/RequestedExecDate<BR>
+                            <span>Format: yyyy/MM/dd</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">SeqB</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">21</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px" src="..\..\..\..\/images/transform.ico">
+                            <A
+                                href="../../../../Summary/MappingDefinitionGroups/MSDVendor/MappingDefinitions/TruncateStartOfString.html"> TruncateStartOf...</A>
+                        </TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/TransactionReference,&quot;16&quot;,&quot;TransactionReference&quot;
+                            to Output[Out1]/Block4/TransactionDets[1]/TransactionRef<BR>
+                            <span>maxLength: &quot;16&quot;</span>
+                            <BR>
+                            <span>fieldName: &quot;TransactionReference&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">23E</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            CopySubstring</TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/VendorBICCode
+                            to TEMP~tmpValue<BR>
+                            <span>Start: &quot;4&quot;</span>
+                            <BR>
+                            <span>Length: &quot;2&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%">&quot;OTHR&quot; to Output[Out1]/Block4/TransactionDets[1]/InstructionCode[1]/InstructionCode<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>(LedgerJournalTrans[Counter1]/VendorBICCode
+                                Length = &quot;8&quot;  OR
+                                LedgerJournalTrans[Counter1]/VendorBICCode
+                                Length = &quot;11&quot; )</SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    CopySubstring</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/VendorBICCode
+                                    to TEMP~tmpValue<BR>
+                                    <span>Start: &quot;5&quot;</span>
+                                    <BR>
+                                    <span>Length: &quot;2&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Log</TD><TD
+                                    width="88%">ALL,&quot;Extracted
+                                    Value = [%]&quot;,TEMP~tmpValue<BR>
+                                    <span>DefaultValue: ALL</span>
+                                    <BR>
+                                    <span>Input1: TEMP ~tmpValue</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>LedgerJournalTrans[Counter1]/VendorBICCode
+                                    Contains
+                                    &quot;SAMBSARI&quot; </SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;01&quot;
+                                    to Output[Out1]/Block4/TransactionDets[1]/InstructionCode[1]/AdditionalInfo<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else_if.ico">
+                                    ELSEIF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN>TEMP~tmpValue
+                                    = &quot;SA&quot;</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;04&quot;
+                                    to Output[Out1]/Block4/TransactionDets[1]/InstructionCode[1]/AdditionalInfo<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;02&quot;
+                                    to Output[Out1]/Block4/TransactionDets[1]/InstructionCode[1]/AdditionalInfo<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">&quot;02&quot;
+                                    to Output[Out1]/Block4/TransactionDets[1]/InstructionCode[1]/AdditionalInfo<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">32B</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/Currency
+                            to Output[Out1]/Block4/TransactionDets[1]/CcyTxnAmt/Currency<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/Amount
+                            to Output[Out1]/Block4/TransactionDets[1]/CcyTxnAmt/Amount<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">50G</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/BankAccountNumber
+                            to Output[Out1]/Block4/TransactionDets[1]/OrderingCustomer/OptionG/Account<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">&quot;SCHMSADEXXX&quot; to Output[Out1]/Block4/TransactionDets[1]/OrderingCustomer/OptionG/IdCode<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">56A</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%"
+                            class="actionIsDisabled">LedgerJournalTrans[Counter1]/IntermediatorBankAccount
+                            to Output[Out1]/Block4/TransactionDets[1]/Intermediary/OptionA/PartyIdentifier<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%"
+                            class="actionIsDisabled">LedgerJournalTrans[Counter1]/IntermediatorBICCode
+                            to Output[Out1]/Block4/TransactionDets[1]/Intermediary/OptionA/IdCode<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            PruneEmptyNodes</TD><TD width="88%" class="actionIsDisabled">Output[Out1]/Block4/TransactionDets[1]/Intermediary<BR>
+                            <span>Target: Block4/TransactionDets[1]/Intermediary</span>
+                            <BR>
+                            <span>DefaultValue: Immediate children only</span>
+                            <BR>
+                            <span>DefaultValue: true</span>
+                            <BR>
+                            <span>DefaultValue: true</span>
+                            <BR>
+                            <span>DefaultValue: false</span>
+                            <BR>
+                            <span>DefaultValue: false</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">57A</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD width="88%"
+                            class="actionIsDisabled">LedgerJournalTrans[Counter1]/VendorBICCode
+                            to Output[Out1]/Block4/TransactionDets[1]/AcctWithInstitution/OptionA/IdCode<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>(LedgerJournalTrans[Counter1]/VendorBICCode
+                                IsInteger AND
+                                LedgerJournalTrans[Counter1]/VendorBICCode
+                                Length = &quot;9&quot; )</SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/VendorBICCode
+                                    to Output[Out1]/Block4/TransactionDets[1]/AcctWithInstitution/OptionD/PartyIdentifier<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Replace</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/VendorBankAccountAddress
+                                    to TEMP~tmpValue<BR>
+                                    <span>What: &quot;\n&quot;</span>
+                                    <BR>
+                                    <span>With: &quot; &quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Replace</TD><TD
+                                    width="88%">TEMP~tmpValue
+                                    to TEMP~tmpValue<BR>
+                                    <span>What: &quot;\r&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    SplitOnLength</TD><TD
+                                    width="88%">TEMP~tmpValue
+                                    to TEMP~values[]<BR>
+                                    <span>Length: &quot;35&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    s:CombineMultiLineText</TD><TD
+                                    width="88%">TEMP~values[]
+                                    to Output[Out1]/Block4/TransactionDets[1]/AcctWithInstitution/OptionD/NameAndAddress<BR>
+                                    <span>FixedValue</span>
+                                    <BR>
+                                    <span>FixedValue: true</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>LedgerJournalTrans[Counter1]/IBANcode IsPresent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/IBANcode
+                                    to Output[Out1]/Block4/TransactionDets[1]/AcctWithInstitution/OptionA/PartyIdentifier<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/VendorBankAccountNumber
+                                    to Output[Out1]/Block4/TransactionDets[1]/AcctWithInstitution/OptionA/PartyIdentifier<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>LedgerJournalTrans[Counter1]/VendorBICCode IsAbsent</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/error.ico">
+                                    Exception</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting">&quot;Failed
+                                    to
+                                    build
+                                    MT
+                                    101: in...<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_else_if.ico">
+                                    ELSEIF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN>NOT((LedgerJournalTrans[Counter1]/VendorBICCode
+                                    Length
+                                    =
+                                    &quot;11&quot;
+                                    OR
+                                    LedgerJournalTrans[Counter1]/VendorBICCode
+                                    Length
+                                    =
+                                    &quot;8&quot; ))</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/error.ico">
+                                    Exception</TD><TD
+                                    width="88%"
+                                    class="tableActionSetting">&quot;Failed
+                                    to
+                                    build
+                                    MT
+                                    101: [&quot;...<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%"></TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionNameIsDisabled"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%"
+                                    class="actionIsDisabled">LedgerJournalTrans[Counter1]/VendorBICCode
+                                    to Output[Out1]/Block4/TransactionDets[1]/AcctWithInstitution/OptionA/PartyIdentifier<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/VendorBICCode
+                                    to Output[Out1]/Block4/TransactionDets[1]/AcctWithInstitution/OptionA/IdCode<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">59</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>LedgerJournalTrans[Counter1]/IBANcode IsPresent</SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/IBANcode
+                                    to Output[Out1]/Block4/TransactionDets[1]/Beneficiary/NoOption/Account<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_else.ico">
+                                    ELSE</TD><TD width="88%"
+                                    colspan="2"><SPAN class></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/VendorBankAccountNumber
+                                    to Output[Out1]/Block4/TransactionDets[1]/Beneficiary/NoOption/Account<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            RemoveAll</TD><TD width="88%">TEMP~values[]<BR>
+                            <span>Target: TEMP ~values[]</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/VendorBankAccountName
+                            to TEMP~values[.NEW]<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px" src="..\..\..\..\/images/transform.ico">
+                            <A
+                                href="../../../../Summary/MappingDefinitionGroups/MSDVendor/MappingDefinitions/TruncateString.html"> TruncateString</A>
+                        </TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/VendorBankAccountName,&quot;70&quot;,&quot;VendorBankAccountName&quot;
+                            to TEMP~tmpValue<BR>
+                            <span>maxLength: &quot;70&quot;</span>
+                            <BR>
+                            <span>fieldName: &quot;VendorBankAccountName&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Replace</TD><TD width="88%"
+                            class="actionIsDisabled">LedgerJournalTrans[Counter1]/VendorBankAccountAddress
+                            to TEMP~tmpValue<BR>
+                            <span>What: &quot;\n&quot;</span>
+                            <BR>
+                            <span>With: &quot; &quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%"
+                                class="headingActionNameIsDisabled"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            Replace</TD><TD width="88%"
+                            class="actionIsDisabled">TEMP~tmpValue to TEMP~tmpValue<BR>
+                            <span>What: &quot;\r&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            SplitOnLength</TD><TD
+                            width="88%">TEMP~tmpValue to TEMP~values[]<BR>
+                            <span>Length: &quot;35&quot;</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/scroll.ico">
+                            s:CombineMultiLineText</TD><TD
+                            width="88%">TEMP~values[] to Output[Out1]/Block4/TransactionDets[1]/Beneficiary/NoOption/NameAndAddress<BR>
+                            <span>FixedValue</span>
+                            <BR>
+                            <span>FixedValue: true</span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">70</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_if.ico">
+                            IF</TD><TD width="88%" colspan="2"><SPAN
+                                class>LedgerJournalTrans[Counter1]/RemittanceInformation/InvoiceId IsPresent</SPAN>
+                            <BR>
+                            <span></span>
+                        </TD></TR>
+                    <TR width="100%">
+                        <TD colspan="3" width="100%"
+                                class="tableActionSetting"><TABLE
+                                width="100%" class="tableIfThenElse">
+                                <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px" width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                <TR><TD></TD><TD colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR class="trevencolor">
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_copy_simple.ico">
+                                    Copy</TD><TD
+                                    width="88%">LedgerJournalTrans[Counter1]/RemittanceInformation/InvoiceId
+                                    to TEMP~tmpValue<BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if.ico">
+                                    IF</TD><TD
+                                    width="88%"
+                                    colspan="2"><SPAN
+                                    class>NOT(TEMP~tmpValue
+                                    Matches
+                                    &quot;INV/*&quot;
+                                    WildCard
+                                    Matching )</SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR width="100%">
+                                    <TD colspan="3"
+                                    width="100%"
+                                    class="tableActionSetting"><TABLE
+                                    width="100%" class="tableIfThenElse">
+                                    <TR>
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/action_if_then.ico">
+                                    THEN</TD><TD
+                                    width="88%" colspan="2"><SPAN></SPAN>
+                                    <BR>
+                                    <span></span>
+                                    </TD></TR>
+                                    <TR><TD></TD><TD
+                                    colspan="3"
+                                    width="100%"><TABLE
+                                    width="100%" class="tableActionSetting">
+                                    <TR>
+
+                                    <TD
+                                    width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px"
+                                    src="..\..\..\..\/images/scroll.ico">
+                                    Concatenate</TD><TD
+                                    width="88%">&quot;INV/&quot;,TEMP~tmpValue
+                                    to TEMP~tmpValue<BR>
+
+                                    <span>Input1: &quot;INV/&quot;</span>
+                                    <BR>
+
+                                    <span>Input2:
+                                    TEMP ~tmpValue</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%"></TABLE>
+                                    </TD></TR>
+                                    </TABLE>
+                                    <TABLE width="100%" class="tableActionSetting">
+                                    <TR>
+                                    <TD width="13%"
+                                    class="headingActionName"><IMG
+                                    height="16px"
+                                    width="16px" src="..\..\..\..\/images/transform.ico">
+                                    <A
+                                    href="../../../../Summary/MappingDefinitionGroups/MSDVendor/MappingDefinitions/TruncateString.html"> TruncateString</A>
+                                    </TD><TD
+                                    width="88%">TEMP~tmpValue,&quot;35&quot;,&quot;Remittance/InvoiceId&quot;
+                                    to Output[Out1]/Block4/TransactionDets[1]/RemittanceInfo<BR>
+                                    <span>maxLength: &quot;35&quot;</span>
+                                    <BR>
+                                    <span>fieldName: &quot;Remittance/InvoiceId&quot;</span>
+                                    </TD></TR>
+                                    </TABLE>
+                                    </TD></TR>
+                            </TABLE>
+                            <TABLE width="100%"></TABLE>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">71A</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">LedgerJournalTrans[Counter1]/DetailsofCharges
+                            to Output[Out1]/Block4/TransactionDets[1]/DetailsOfCharges<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR>
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/blank.ico">
+                            Comment</TD><TD width="88%"
+                                class="tableActionSetting"><SPAN class="textComments">77B</SPAN>
+                        </TD></TR>
+                </TABLE>
+                <TABLE width="100%" class="tableActionSetting">
+                    <TR class="trevencolor">
+                        <TD width="13%" class="headingActionName"><IMG
+                                height="16px" width="16px"
+                            src="..\..\..\..\/images/action_copy_simple.ico">
+                            Copy</TD><TD
+                            width="88%">&quot;/09/SA//Payment to
+                            Suppliers&quot; to Output[Out1]/Block4/TransactionDets[1]/RegulatoryReporting<BR>
+                            <span></span>
+                        </TD></TR>
+                </TABLE>
+            </TD></TR>
+    </TABLE><BR></BR><SPAN class="headingMappingColour">End Of Mapping</SPAN></BODY>
+</HTML>
